@@ -3,8 +3,6 @@
 import { login } from "@/lib/action";
 import styles from "./loginForm.module.css";
 import { useFormState } from "react-dom";
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { handleGithubLogin } from "@/lib/action";
 import Image from "next/image";
@@ -12,11 +10,6 @@ import Image from "next/image";
 export default function LoginForm() {
   const [state, formAction] = useFormState(login, undefined);
 
-  const router = useRouter();
-
-  useEffect(() => {
-    state?.success && router.push("/");
-  }, [state?.success, router]);
   return (
     <>
       <form className={styles.github} action={handleGithubLogin}>
