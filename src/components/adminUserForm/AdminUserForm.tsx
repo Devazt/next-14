@@ -4,7 +4,7 @@ import { addUser } from "@/lib/action";
 import styles from "./adminUserForm.module.css";
 import { useFormState } from "react-dom";
 
-export default async function AdminUserForm() {
+export default function AdminUserForm() {
   const [state, formAction] = useFormState(addUser, undefined);
 
   return (

@@ -17,9 +17,9 @@ export default function AboutPage() {
         </h1>
         <p className={styles.desc}>
           We create digital ideas that are bigger, bolder, braver and better. We
-          believe in good ideas flexibility and precission We're world's Our
-          Special Team best consulting & finance solution provider. Wide range
-          of web and software development services.
+          believe in good ideas flexibility and precission We&apos;re
+          world&apos;s Our Special Team best consulting & finance solution
+          provider. Wide range of web and software development services.
         </p>
         <div className={styles.boxes}>
           <div className={styles.box}>
